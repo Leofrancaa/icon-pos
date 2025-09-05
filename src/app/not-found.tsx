@@ -41,14 +41,12 @@ export default function NotFound() {
                 </Button>
               </Link>
 
-              <Button
-                variant="outline"
-                className="w-full"
-                onClick={() => window.history.back()}
-              >
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Página Anterior
-              </Button>
+              <Link href="/cursos">
+                <Button variant="outline" className="w-full">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Ver Cursos
+                </Button>
+              </Link>
             </div>
 
             <div className="pt-4 border-t">
