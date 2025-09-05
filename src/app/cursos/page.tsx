@@ -7,7 +7,6 @@ import { Separator } from "@/components/ui/separator";
 import {
   Clock,
   Users,
-  Calendar,
   CheckCircle,
   ArrowRight,
   BookOpen,
