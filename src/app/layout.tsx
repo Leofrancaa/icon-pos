@@ -6,10 +6,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "ImplantoEdu - Especialização em Implantodontia",
+  title: "Ícone Pós - Especialização em Implantodontia",
   description:
     "Curso de pós-graduação em Implantodontia com metodologia prática, professores experientes e certificação reconhecida. Transforme sua carreira na odontologia.",
-  authors: [{ name: "ImplantoEdu" }],
+  authors: [{ name: "Ícone Pós" }],
   keywords: [
     "implantodontia",
     "curso",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "especialização",
   ],
   openGraph: {
-    title: "ImplantoEdu - Especialização em Implantodontia",
+    title: "Ícone Pós - Especialização em Implantodontia",
     description:
       "Curso de pós-graduação em Implantodontia com metodologia prática, professores experientes e certificação reconhecida.",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "https://lovable.dev/opengraph-image-p98pqg.png",
         width: 1200,
         height: 630,
-        alt: "ImplantoEdu",
+        alt: "Ícone Pós",
       },
     ],
   },

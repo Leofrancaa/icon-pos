@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/navigation/header";
 import Footer from "@/components/navigation/footer";
 import {
@@ -10,15 +12,9 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import {
-  GraduationCap,
-  Award,
-  BookOpen,
-  Users,
-  ExternalLink,
-  Calendar,
-  MapPin,
-} from "lucide-react";
+import { IMAGES } from "../../lib/images";
+import Image from "next/image";
+import { Award, BookOpen, Users, ExternalLink, MapPin } from "lucide-react";
 
 const Professores = () => {
   const professors = [
@@ -33,7 +29,7 @@ const Professores = () => {
         "Autor de 3 livros sobre implantodontia",
         "Palestrante internacional",
       ],
-      image: "/api/placeholder/300/300",
+      image: IMAGES.professors.male1,
       specialties: ["Implantes Imediatos", "All-on-4", "Regeneração Óssea"],
       courses: ["Implantodontia Avançada", "Cirurgia Guiada"],
     },
@@ -48,7 +44,7 @@ const Professores = () => {
         "Coordenadora de pesquisa em biomateriais",
         "Consultora científica internacional",
       ],
-      image: "/api/placeholder/300/300",
+      image: IMAGES.professors.female1,
       specialties: ["Enxertos Ósseos", "Regeneração Tecidual", "Seio Maxilar"],
       courses: ["Implantodontia Básica", "Regeneração Óssea"],
     },
@@ -63,7 +59,7 @@ const Professores = () => {
         "Certificação Straumann Pro",
         "Instrutor de cursos internacionais",
       ],
-      image: "/api/placeholder/300/300",
+      image: IMAGES.professors.male2,
       specialties: ["Prótese Imediata", "CAD/CAM", "Estética Avançada"],
       courses: ["Implantodontia Básica", "Prótese Digital"],
     },
@@ -77,7 +73,7 @@ const Professores = () => {
         "14+ anos de experiência",
         "Pesquisadora em Biomateriais",
       ],
-      image: "/api/placeholder/300/300",
+      image: IMAGES.professors.female2,
       specialties: ["Periodontia", "Peri-implantite", "Tecidos Moles"],
       courses: ["Implantodontia Básica", "Periodontia Aplicada"],
     },
@@ -91,7 +87,7 @@ const Professores = () => {
         "13+ anos de experiência",
         "Palestrante Internacional",
       ],
-      image: "/api/placeholder/300/300",
+      image: IMAGES.professors.male3,
       specialties: ["Estética Anterior", "Provisórios", "Rosa e Branco"],
       courses: ["Implantodontia Estética", "Zona Estética"],
     },
@@ -130,10 +126,14 @@ const Professores = () => {
                 className="overflow-hidden hover:shadow-lg transition-shadow group"
               >
                 <div className="relative">
-                  <div className="aspect-square bg-secondary rounded-t-lg flex items-center justify-center">
-                    <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center">
-                      <GraduationCap className="w-16 h-16 text-primary" />
-                    </div>
+                  <div className="aspect-square w-full bg-secondary rounded-t-lg overflow-hidden">
+                    <Image
+                      src={professor.image}
+                      alt={professor.name}
+                      fill
+                      className="object-cover w-full h-full"
+                      priority
+                    />
                   </div>
                   <div className="absolute top-4 right-4">
                     <Badge className="bg-accent text-accent-foreground">

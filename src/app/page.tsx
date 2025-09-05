@@ -15,12 +15,11 @@ import {
   Award,
   Star,
   ArrowRight,
-  CheckCircle,
   BookOpen,
   Calendar,
   Clock,
 } from "lucide-react";
-import TestImages from "../components/testImage";
+import { IMAGES } from "../lib/images";
 
 const Index = () => {
   const courses = [
@@ -76,7 +75,7 @@ const Index = () => {
       <section className="relative min-h-[80vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${IMAGES.hero.dental})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
         </div>
@@ -106,7 +105,7 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
               >
                 Baixar Programa
                 <BookOpen className="ml-2 h-5 w-5" />
@@ -206,7 +205,7 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Por que escolher a ImplantoEdu?
+              Por que escolher a Ícone Pós?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Somos referência em ensino de implantodontia no Brasil, com
@@ -342,7 +341,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
             >
               Falar com Consultor
             </Button>
@@ -351,9 +350,6 @@ const Index = () => {
       </section>
 
       <Footer />
-
-      {/* Componente temporário para testar imagens */}
-      <TestImages />
     </div>
   );
 };
