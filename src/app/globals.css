@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Core Medical Colors - HSL values without units for hsl() function */
+  --background: 0 0% 100%;
+  --foreground: 210 74% 16%;
+
+  /* Medical Blue Theme */
+  --primary: 210 74% 16%;
+  --primary-foreground: 0 0% 100%;
+  --primary-light: 210 61% 44%;
+
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 210 74% 16%;
+
+  --accent: 122 39% 49%;
+  --accent-foreground: 0 0% 100%;
+
+  /* UI Elements */
+  --card: 0 0% 100%;
+  --card-foreground: 210 74% 16%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 74% 16%;
+
+  --muted: 0 0% 96%;
+  --muted-foreground: 215 16% 47%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 210 61% 44%;
+
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
