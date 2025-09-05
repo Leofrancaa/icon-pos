@@ -23,19 +23,6 @@ export const metadata: Metadata = {
     description:
       "Curso de pós-graduação em Implantodontia com metodologia prática, professores experientes e certificação reconhecida.",
     type: "website",
-    images: [
-      {
-        url: "https://lovable.dev/opengraph-image-p98pqg.png",
-        width: 1200,
-        height: 630,
-        alt: "Ícone Pós",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@lovable_dev",
-    images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
   },
 };
 
